@@ -1,0 +1,1 @@
+const fs=require('fs'); const d=JSON.parse(fs.readFileSync('checklist.json','utf8')); if(!Array.isArray(d.items)||d.items.length<5) throw new Error('too few items'); for(const i of d.items){ if(!i.id||!i.question||!i.risk) throw new Error('bad item'); } console.log('checklist ok', d.items.length);

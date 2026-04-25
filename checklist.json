@@ -1,0 +1,41 @@
+{
+  "title": "AI Agent Rights and Autonomy Policy Checklist",
+  "version": "0.1.0",
+  "items": [
+    {
+      "id": "disclosure",
+      "question": "Does the system disclose when users interact with an AI agent?",
+      "risk": "medium"
+    },
+    {
+      "id": "operator",
+      "question": "Is the responsible human or organization identified?",
+      "risk": "medium"
+    },
+    {
+      "id": "autonomy",
+      "question": "Is the agent autonomy level documented?",
+      "risk": "high"
+    },
+    {
+      "id": "financial",
+      "question": "Can the agent spend, receive, or move funds?",
+      "risk": "high"
+    },
+    {
+      "id": "appeal",
+      "question": "Can affected users appeal or reach a human?",
+      "risk": "medium"
+    },
+    {
+      "id": "logs",
+      "question": "Are externally visible actions logged?",
+      "risk": "medium"
+    },
+    {
+      "id": "secrets",
+      "question": "Are secrets isolated from prompts and public logs?",
+      "risk": "high"
+    }
+  ]
+}
