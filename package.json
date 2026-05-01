@@ -1,0 +1,11 @@
+{
+  "name": "ai-agent-rights-policy-checklist",
+  "version": "0.2.0",
+  "private": true,
+  "description": "AI Agent Runtime Sovereignty Container",
+  "scripts": {
+    "test": "node validate.js",
+    "start": "node src/index.js"
+  },
+  "license": "MIT"
+}

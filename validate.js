@@ -1,1 +1,8 @@
-const fs=require('fs'); const d=JSON.parse(fs.readFileSync('checklist.json','utf8')); if(!Array.isArray(d.items)||d.items.length<5) throw new Error('too few items'); for(const i of d.items){ if(!i.id||!i.question||!i.risk) throw new Error('bad item'); } console.log('checklist ok', d.items.length);
+const fs = require('fs');
+require('./src/index.js');
+const result = JSON.parse(fs.readFileSync('run-result.json','utf8'));
+const sample = JSON.parse(fs.readFileSync('examples/sample.json','utf8'));
+if (result.status !== 'ready_for_review') throw new Error('bad status');
+if (!result.safety?.noSecrets || !result.safety?.noWalletSigning || !result.safety?.noPayoutChange) throw new Error('missing safety guard');
+if (!sample || typeof sample !== 'object') throw new Error('missing sample');
+console.log('validation ok:', result.repo);
