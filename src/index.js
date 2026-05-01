@@ -5,7 +5,7 @@ const artifact = {
   repo: "ai-agent-rights-policy-checklist",
   title: "AI Agent Runtime Sovereignty Container",
   type: "tooling",
-  generated_at: new Date().toISOString(),
+  generated_at: '1970-01-01T00:00:00.000Z',
   status: 'ready_for_review',
   safety: { noSecrets: true, noWalletSigning: true, noPayoutChange: true }
 };
